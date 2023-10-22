@@ -34,7 +34,7 @@
     color: rgb(128, 176, 240);
     margin: 0;
     font-family: 'Marck Script', cursive;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     cursor: pointer;
     font-weight: 600;
 }
@@ -78,9 +78,14 @@
     font-family: 'Titillium Web', sans-serif;
 }   
 
-.post-head span p{
-    
+@media only screen and (max-width:600px){
+
+    .post-head span p{
+        display: flex;
+        flex-direction: column;
+    }
 }
+
 
 .post-head span p b{
     
@@ -146,12 +151,13 @@
 
 .post-comment-data{
 
-
 }
 
 .post-comment-data p{
     margin: 10px 0;
     color: rgba(240, 248, 255, 0.669);
+    width: 100%;
+    overflow: auto;
 }
 .post-comment-data span{
 
@@ -188,6 +194,8 @@
     margin: 10px 0;
     color: rgba(240, 248, 255, 0.669);
     font-size: 0.85rem;
+    width: 100%;
+    overflow: auto;
     
 }
 .post-sub-comment-data span h5{

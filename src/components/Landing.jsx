@@ -59,7 +59,7 @@ const Landing = () => {
                     />
                     </filter>
                 </svg>
-                <div ref={ref} className="hooksMain" onMouseMove={handleMouseMove}>
+                <div ref={ref} className="animatedCircle" onMouseMove={handleMouseMove}>
                     {trail.map((props, index) => (
                     <animated.div key={index} style={{ transform: props.xy.to(trans) }} />
                     ))}

@@ -65,7 +65,7 @@ const Home = () => {
                     
                     <h4>Latest Stories</h4>
                     {popularStories.length === 0 ?
-                    <div class="spinner-border text-secondary  loading-spinner" role="status"><span class="visually-hidden">Loading...</span></div>
+                    <div className="spinner-border text-secondary  loading-spinner" role="status"><span className="visually-hidden">Loading...</span></div>
                     :
                     ""}
                     <div className="home-articles">
@@ -93,7 +93,7 @@ const Home = () => {
                 <div className="home-body">
                     <h4>Search Results</h4>
                     {searchStories.length === 0 ?
-                    <div class="spinner-border text-secondary loading-spinner" role="status"><span class="visually-hidden">Loading...</span></div>
+                    <div className="spinner-border text-secondary loading-spinner" role="status"><span className="visually-hidden">Loading...</span></div>
                     :
                     ""} 
                     {searchStories.length > 0 ?

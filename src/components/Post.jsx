@@ -37,7 +37,7 @@ const Post = () => {
             </div>
 
             {loading ?
-                <div class="spinner-border text-secondary  post-loading-spinner" role="status"><span class="visually-hidden">Loading...</span></div>
+                <div className="spinner-border text-secondary  post-loading-spinner" role="status"><span className="visually-hidden">Loading...</span></div>
             :
             ""
             }
@@ -81,7 +81,7 @@ const Post = () => {
                           </span>
                         :
                         ""}
-                        <div class="collapse" id={`h${index}`}>
+                        <div className="collapse" id={`h${index}`}>
 
                             {comment.children.map((subComment, i)=>(
                               <div className="post-sub-comment" key={i}>
